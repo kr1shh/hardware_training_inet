@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  font-family: "Montserrat";
+  color: #FFFFFF;
+  width: 100%;
+}
+nav .nav_container {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgb(224, 28, 50) 0%, rgb(73, 3, 3) 100%);
+}
+nav .nav_container .nav_logo {
+  width: 43px;
+  margin-left: 25px;
+}
+@media (min-width: 640px) {
+  nav .nav_container .nav_logo {
+    width: 140px;
+  }
+}
+nav .nav_container .nav_logo img {
+  width: 100%;
+}
+nav .nav_container .nav_logo img:nth-child(1) {
+  display: none;
+}
+@media (max-width: 640px) {
+  nav .nav_container .nav_logo img:nth-child(1) {
+    display: block;
+  }
+}
+nav .nav_container .nav_logo img:nth-child(2) {
+  display: block;
+}
+@media (max-width: 640px) {
+  nav .nav_container .nav_logo img:nth-child(2) {
+    display: none;
+  }
+}
+nav .nav_container .nav_links {
+  display: none;
+  margin-right: 25px;
+}
+@media (min-width: 769px) {
+  nav .nav_container .nav_links {
+    display: block;
+  }
+}
+nav .nav_container .nav_links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+nav .nav_container .nav_links ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+nav .nav_container .mob_ham {
+  display: none;
+  gap: 5px;
+  margin-right: 25px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+  z-index: 100;
+}
+nav .nav_container .mob_ham.open {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  nav .nav_container .mob_ham {
+    display: flex;
+    flex-direction: column;
+  }
+}
+nav .nav_container .mob_ham div {
+  width: 10px;
+  height: 10px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav_container .mob_ham div.open {
+  background-color: #E01C32;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav_container .mob_nav_links {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
+  color: #E01C32;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-1000px);
+  transition: transform 0.3s ease-in-out;
+}
+nav .nav_container .mob_nav_links.open {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  nav .nav_container .mob_nav_links {
+    display: flex;
+  }
+}
+nav .nav_container .mob_nav_links img {
+  position: absolute;
+  width: 43px;
+  left: 25px;
+  top: 5px;
+}
+nav .nav_container .mob_nav_links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+nav .nav_container .mob_nav_links ul a {
+  text-decoration: none;
+}
+nav .nav_container .mob_nav_links ul a li {
+  list-style: none;
+  text-align: center;
+  color: #E01C32;
+  font-weight: 600;
+  font-size: 24px;
+}/*# sourceMappingURL=nav_style.css.map */
