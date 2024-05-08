@@ -80,31 +80,31 @@ section .hero_container .hero_overlay {
   opacity: 0.6;
 }
 
-section {
+section#about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 50px 0;
 }
-section span {
+section#about span {
   font-weight: 700;
   font-size: 30px;
   text-align: center;
 }
-section .about_content {
+section#about .about_content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 @media (min-width: 769px) {
-  section .about_content {
+  section#about .about_content {
     flex-direction: row;
     gap: 50px;
   }
 }
-section .about_content .about_img {
+section#about .about_content .about_img {
   background-image: url(../../asset/photos/team.jpg);
   width: 260px;
   height: 305px;
@@ -116,23 +116,84 @@ section .about_content .about_img {
   margin: 50px 0;
 }
 @media (min-width: 640px) {
-  section .about_content .about_img {
+  section#about .about_content .about_img {
     width: 500px;
   }
 }
-section .about_content p {
+section#about .about_content p {
   font-weight: 400;
   text-align: center;
   width: 250px;
 }
 @media (min-width: 640px) {
-  section .about_content p {
+  section#about .about_content p {
     width: 500px;
   }
 }
 @media (min-width: 769px) {
-  section .about_content p {
+  section#about .about_content p {
     text-align: start;
     width: 300px;
   }
+}
+
+section .offer_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(224, 28, 51, 0.1647058824);
+  padding: 50px 0 100px 0;
+  gap: 60px;
+}
+section .offer_container .offer_title span {
+  font-weight: 700;
+  font-size: 30px;
+}
+section .offer_container .offer_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+section .offer_container .offer_cards a {
+  text-decoration: none;
+  color: black;
+}
+section .offer_container .offer_cards .offer_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  position: relative;
+}
+@media (max-width: 769px) {
+  section .offer_container .offer_cards .offer_card {
+    width: 160px;
+    height: 180px;
+  }
+}
+@media (max-width: 640px) {
+  section .offer_container .offer_cards .offer_card {
+    display: none;
+  }
+}
+section .offer_container .offer_cards .offer_card .offer_content {
+  position: absolute;
+  background-color: #FFFFFF;
+  padding: 8px 24px;
+  border-radius: 24px;
+  bottom: -30px;
+  filter: drop-shadow(0px 3px 6px rgba(255, 22, 22, 0.2588235294));
+}
+section .offer_container .offer_cards .offer_card .offer_content p {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
 }/*# sourceMappingURL=home_style.css.map */
