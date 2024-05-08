@@ -22,6 +22,7 @@ section .hero_container .hero_content {
   z-index: 3;
   color: #FFFFFF;
   margin-top: 50px;
+  gap: 10px;
 }
 section .hero_container .hero_content p {
   text-align: center;
@@ -77,4 +78,61 @@ section .hero_container .hero_overlay {
   height: 100%;
   background: linear-gradient(180deg, rgb(30, 30, 30) 0%, rgb(224, 28, 50) 100%);
   opacity: 0.6;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+section span {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+section .about_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  section .about_content {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+section .about_content .about_img {
+  background-image: url(../../asset/photos/team.jpg);
+  width: 260px;
+  height: 305px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 34px;
+  overflow: hidden;
+  margin: 50px 0;
+}
+@media (min-width: 640px) {
+  section .about_content .about_img {
+    width: 500px;
+  }
+}
+section .about_content p {
+  font-weight: 400;
+  text-align: center;
+  width: 250px;
+}
+@media (min-width: 640px) {
+  section .about_content p {
+    width: 500px;
+  }
+}
+@media (min-width: 769px) {
+  section .about_content p {
+    text-align: start;
+    width: 300px;
+  }
 }/*# sourceMappingURL=home_style.css.map */

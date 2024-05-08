@@ -1,5 +1,10 @@
 @import "./variables.scss";
 
+
+
+// Hero style ### START ###
+
+
 section{
     font-family: $montserrat;
     .hero_container{
@@ -23,6 +28,7 @@ section{
             z-index: 3;
             color: $white;
             margin-top: 50px;
+            gap: 10px;
 
             p{
                 text-align: center;
@@ -78,6 +84,66 @@ section{
             height: 100%;
             background: linear-gradient(180deg, rgba(30,30,30,1) 0%, rgba(224,28,50,1) 100%);
             opacity: .6;
+        }
+    }
+}
+
+
+// Hero style ### END ###
+
+// About style ### START ###
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    span{
+        font-weight: $bold;
+        font-size: 30px;
+        text-align: center;
+    }
+    .about_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media(min-width:769px){
+            flex-direction: row;
+            gap: 50px;
+        }
+
+        .about_img{
+            background-image: url(../../asset/photos/team.jpg);
+            width: 260px;
+            height: 305px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 34px;
+            overflow: hidden;
+            margin: 50px 0;
+
+            @media(min-width:640px){
+                width: 500px;
+            }
+
+        }
+        p{
+            font-weight: $regular;
+            text-align: center;
+            width: 250px;
+
+            @media(min-width:640px){
+                width: 500px;
+            }
+
+            @media(min-width:769px){
+                text-align: start;
+                width: 300px;
+            }
         }
     }
 }
