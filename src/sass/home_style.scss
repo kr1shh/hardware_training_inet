@@ -22,6 +22,55 @@ section{
             justify-content: center;
             z-index: 3;
             color: $white;
+            margin-top: 50px;
+
+            p{
+                text-align: center;
+
+                &:nth-child(1){
+                    font-weight: $bold;
+                    font-size: 30px;
+                    width: 300px;
+                    margin: 5px;
+
+                    @media(min-width:640px){
+                        width: 500px;
+                    }
+
+                    @media(min-width:769px){
+                        width: 900px;
+                        font-size: 50px;
+                    }
+                }
+
+                &:nth-child(2){
+                    font-size: 12px;
+                    width: 300px;
+
+                    @media(min-width:640px){
+                        width: 400px;
+                    }
+                }
+            }
+            button{
+                background-color: $accent;
+                border: none;
+                border-radius: 50px;
+                color: $white;
+                padding: 13px 24px;
+                font-family: $montserrat;
+                font-weight: $bold;
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+                @media(min-width:769px){
+                    font-size: 15px;
+                }
+
+                &:hover{
+                    background-color: $hover;
+
+                }
+            }
         }
         .hero_overlay{
             position: absolute;

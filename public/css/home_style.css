@@ -21,6 +21,55 @@ section .hero_container .hero_content {
   justify-content: center;
   z-index: 3;
   color: #FFFFFF;
+  margin-top: 50px;
+}
+section .hero_container .hero_content p {
+  text-align: center;
+}
+section .hero_container .hero_content p:nth-child(1) {
+  font-weight: 700;
+  font-size: 30px;
+  width: 300px;
+  margin: 5px;
+}
+@media (min-width: 640px) {
+  section .hero_container .hero_content p:nth-child(1) {
+    width: 500px;
+  }
+}
+@media (min-width: 769px) {
+  section .hero_container .hero_content p:nth-child(1) {
+    width: 900px;
+    font-size: 50px;
+  }
+}
+section .hero_container .hero_content p:nth-child(2) {
+  font-size: 12px;
+  width: 300px;
+}
+@media (min-width: 640px) {
+  section .hero_container .hero_content p:nth-child(2) {
+    width: 400px;
+  }
+}
+section .hero_container .hero_content button {
+  background-color: #E01C32;
+  border: none;
+  border-radius: 50px;
+  color: #FFFFFF;
+  padding: 13px 24px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  section .hero_container .hero_content button {
+    font-size: 15px;
+  }
+}
+section .hero_container .hero_content button:hover {
+  background-color: #ff1c37;
 }
 section .hero_container .hero_overlay {
   position: absolute;
