@@ -5,9 +5,10 @@
 // Hero style ### START ###
 
 
-section{
+section {
     font-family: $montserrat;
-    .hero_container{
+
+    .hero_container {
         position: relative;
         display: flex;
         align-items: center;
@@ -20,7 +21,7 @@ section{
         background-size: cover;
 
 
-        .hero_content{
+        .hero_content {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -30,35 +31,36 @@ section{
             margin-top: 50px;
             gap: 10px;
 
-            p{
+            p {
                 text-align: center;
 
-                &:nth-child(1){
+                &:nth-child(1) {
                     font-weight: $bold;
                     font-size: 30px;
                     width: 300px;
                     margin: 5px;
 
-                    @media(min-width:640px){
+                    @media(min-width:640px) {
                         width: 500px;
                     }
 
-                    @media(min-width:769px){
+                    @media(min-width:769px) {
                         width: 900px;
                         font-size: 50px;
                     }
                 }
 
-                &:nth-child(2){
+                &:nth-child(2) {
                     font-size: 12px;
                     width: 300px;
 
-                    @media(min-width:640px){
+                    @media(min-width:640px) {
                         width: 400px;
                     }
                 }
             }
-            button{
+
+            button {
                 background-color: $accent;
                 border: none;
                 border-radius: 50px;
@@ -68,21 +70,23 @@ section{
                 font-weight: $bold;
                 transition: all .3s ease-in-out;
                 cursor: pointer;
-                @media(min-width:769px){
+
+                @media(min-width:769px) {
                     font-size: 15px;
                 }
 
-                &:hover{
+                &:hover {
                     background-color: $hover;
 
                 }
             }
         }
-        .hero_overlay{
+
+        .hero_overlay {
             position: absolute;
             width: 100%;
             height: 100%;
-            background: linear-gradient(180deg, rgba(30,30,30,1) 0%, rgba(224,28,50,1) 100%);
+            background: linear-gradient(180deg, rgba(30, 30, 30, 1) 0%, rgba(224, 28, 50, 1) 100%);
             opacity: .6;
         }
     }
@@ -93,29 +97,31 @@ section{
 
 // About style ### START ###
 
-section#about{
+section#about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px 0;
-    span{
+
+    span {
         font-weight: $bold;
         font-size: 30px;
         text-align: center;
     }
-    .about_content{
+
+    .about_content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
-        @media(min-width:769px){
+        @media(min-width:769px) {
             flex-direction: row;
             gap: 50px;
         }
 
-        .about_img{
+        .about_img {
             background-image: url(../../asset/photos/team.jpg);
             width: 260px;
             height: 305px;
@@ -126,21 +132,22 @@ section#about{
             overflow: hidden;
             margin: 50px 0;
 
-            @media(min-width:640px){
+            @media(min-width:640px) {
                 width: 500px;
             }
 
         }
-        p{
+
+        p {
             font-weight: $regular;
             text-align: center;
             width: 250px;
 
-            @media(min-width:640px){
+            @media(min-width:640px) {
                 width: 500px;
             }
 
-            @media(min-width:769px){
+            @media(min-width:769px) {
                 text-align: start;
                 width: 300px;
             }
@@ -152,8 +159,8 @@ section#about{
 
 // Offer style ### START ### 
 
-section{
-    .offer_container{
+section {
+    .offer_container {
         width: 100%;
         display: flex;
         align-items: center;
@@ -163,25 +170,30 @@ section{
         padding: 50px 0 100px 0;
         gap: 60px;
 
-        .offer_title{
-            span{
-                font-weight:$bold;
+        @media(max-width:640px) {
+            gap: 15px;
+            padding: 50px 0 80px 0;
+        }
+
+        .offer_title {
+            span {
+                font-weight: $bold;
                 font-size: 30px;
             }
         }
 
-        .offer_cards{
+        .offer_cards {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 20px;
 
-            a{
+            a {
                 text-decoration: none;
                 color: black;
             }
 
-            .offer_card{
+            .offer_card {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -193,16 +205,16 @@ section{
                 border-radius: 24px;
                 position: relative;
 
-                @media(max-width:769px){
+                @media(max-width:769px) {
                     width: 160px;
                     height: 180px;
                 }
 
-                @media(max-width:640px){
+                @media(max-width:640px) {
                     display: none;
                 }
 
-                .offer_content{
+                .offer_content {
                     position: absolute;
                     background-color: $white;
                     padding: 8px 24px;
@@ -210,7 +222,7 @@ section{
                     bottom: -30px;
                     filter: drop-shadow(0px 3px 6px #ff161642);
 
-                    p{
+                    p {
                         text-align: center;
                         margin: 0;
                         font-size: 14px;
@@ -218,6 +230,89 @@ section{
                 }
             }
         }
+
+        .mob_offer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @media(min-width:640px){
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .offer_card {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                height: 250px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 24px;
+                position: relative;
+                margin: auto;
+
+                .offer_content {
+                    position: absolute;
+                    background-color: $white;
+                    padding: 8px 24px;
+                    border-radius: 24px;
+                    bottom: -30px;
+                    filter: drop-shadow(0px 3px 6px #ff161642);
+
+                    p {
+                        margin: 0;
+                        text-align: center;
+                    }
+                }
+
+            }
+
+            .mob_offer_nav{
+                display: flex;
+                gap: 10px;
+
+                .left_nav{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 48px;
+                    height: 48px;
+                    background-color: $accent;
+                    border-radius: 50px;
+
+                    i{
+                        font-size: 20px;
+                    }
+                }
+
+                .right_nav{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 48px;
+                    height: 48px;
+                    background-color: $accent;
+                    border-radius: 50px;
+
+                    i{
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .swiper{
+                width: 300px;
+                height: 300px;
+            }
+        }
+
     }
 }
 

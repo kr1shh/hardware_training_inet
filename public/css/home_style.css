@@ -147,6 +147,12 @@ section .offer_container {
   padding: 50px 0 100px 0;
   gap: 60px;
 }
+@media (max-width: 640px) {
+  section .offer_container {
+    gap: 15px;
+    padding: 50px 0 80px 0;
+  }
+}
 section .offer_container .offer_title span {
   font-weight: 700;
   font-size: 30px;
@@ -196,4 +202,76 @@ section .offer_container .offer_cards .offer_card .offer_content p {
   text-align: center;
   margin: 0;
   font-size: 14px;
+}
+section .offer_container .mob_offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 640px) {
+  section .offer_container .mob_offer {
+    display: none;
+  }
+}
+section .offer_container .mob_offer a {
+  text-decoration: none;
+  color: black;
+}
+section .offer_container .mob_offer .offer_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 24px;
+  position: relative;
+  margin: auto;
+}
+section .offer_container .mob_offer .offer_card .offer_content {
+  position: absolute;
+  background-color: #FFFFFF;
+  padding: 8px 24px;
+  border-radius: 24px;
+  bottom: -30px;
+  filter: drop-shadow(0px 3px 6px rgba(255, 22, 22, 0.2588235294));
+}
+section .offer_container .mob_offer .offer_card .offer_content p {
+  margin: 0;
+  text-align: center;
+}
+section .offer_container .mob_offer .mob_offer_nav {
+  display: flex;
+  gap: 10px;
+}
+section .offer_container .mob_offer .mob_offer_nav .left_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #E01C32;
+  border-radius: 50px;
+}
+section .offer_container .mob_offer .mob_offer_nav .left_nav i {
+  font-size: 20px;
+}
+section .offer_container .mob_offer .mob_offer_nav .right_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #E01C32;
+  border-radius: 50px;
+}
+section .offer_container .mob_offer .mob_offer_nav .right_nav i {
+  font-size: 20px;
+}
+section .offer_container .mob_offer .swiper {
+  width: 300px;
+  height: 300px;
 }/*# sourceMappingURL=home_style.css.map */
