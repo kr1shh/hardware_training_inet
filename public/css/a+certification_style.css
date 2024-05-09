@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+section {
+  font-family: "Montserrat";
+}
+section .title_container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 70px 0 0 0;
+  background-image: url(../../asset/photos/Course_Covers/cover-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section .title_container span {
+  z-index: 10;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 36px;
+}
+section .title_container .title_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, rgba(224, 28, 50, 0.7) 100%);
+}
+section .course_des {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+section .course_des p {
+  text-align: center;
+  width: 90%;
+  font-weight: 600;
+}
+@media (min-width: 769px) {
+  section .course_des p {
+    font-size: 18px;
+    width: 60%;
+    margin: 60px 0;
+  }
+}
+section .course_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section .course_content div {
+  margin: 30px 0;
+}
+@media (min-width: 769px) {
+  section .course_content div {
+    display: flex;
+  }
+}
+section .course_content div ul {
+  margin: 0;
+}
+section .course_content div ul li {
+  font-weight: 600;
+  font-size: 16px;
+}
+section .course_content div ul li::marker {
+  color: #E01C32;
+}
+section .tools_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
+section .tools_container span {
+  margin: auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+}
+section .tools_container .tools {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+section .tools_container .tools .tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+section .tools_container .tools .tool p {
+  font-weight: 600;
+}
+section .tools_container .tools .tool .tool_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 24px;
+}/*# sourceMappingURL=a+certification_style.css.map */
